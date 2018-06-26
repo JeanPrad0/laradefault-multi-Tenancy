@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Category;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -44,7 +44,7 @@ class CategoriesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Category  $category
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function show(Category $category)
@@ -55,7 +55,7 @@ class CategoriesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Category  $category
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function edit($account, Category $category)
@@ -67,7 +67,7 @@ class CategoriesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Category  $category
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request,$account, Category $category)
@@ -79,7 +79,7 @@ class CategoriesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Category  $category
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function destroy($account, Category $category)

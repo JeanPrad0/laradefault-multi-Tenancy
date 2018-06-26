@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use App\Scopes\TenantModels;
 use Illuminate\Database\Eloquent\Model;
@@ -13,7 +13,5 @@ class Category extends Model
         'name'
     ];
 
-    /*public function scopeByAccount(Builder $query,$accountId){
-        return $query->where('account_id',$accountId);
-    }*/
+  
 }

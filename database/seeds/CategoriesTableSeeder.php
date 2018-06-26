@@ -11,11 +11,11 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Category::class,10)->create([
+        factory(\App\Models\Category::class,10)->create([
             'account_id' => 1
         ]);
 
-        factory(\App\Category::class,10)->create([
+        factory(\App\Models\Category::class,10)->create([
             'account_id' => 2
         ]);
     }
